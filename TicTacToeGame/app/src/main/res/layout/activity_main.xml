@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rakesh Reddy R" />
+
+
+        <EditText
+            android:id="@+id/editTextRegistrationNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CYS 21068"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Results"
+            android:textSize="24sp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"/>
+
+        <!-- Player 1 Score -->
+        <TextView
+            android:id="@+id/text_view_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 1: 0"
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Player 2 Score -->
+        <TextView
+            android:id="@+id/text_view_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 2: 0"
+            android:textSize="24sp"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Tic Tac Toe Grid -->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_marginBottom="32dp">
+
+            <!-- Buttons for Tic Tac Toe Grid -->
+            <Button
+                android:id="@+id/button_00"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button_01"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button_02"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button_10"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button_11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button_12"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button_20"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button_21"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button_22"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+        </GridLayout>
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Game" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
